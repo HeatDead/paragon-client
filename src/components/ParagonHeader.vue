@@ -1,8 +1,7 @@
 <template>
   <header>
-    <a href="/" id="logo"><h1>PARAGON</h1></a>
-    <RouterLink to="/"
-          ><el-button type="plain" link>Каталог</el-button></RouterLink
+    <RouterLink id="logo" to="/"
+          ><h1>PARAGON</h1></RouterLink
         >
     <nav>
       <RouterLink v-if="!token" to="/login"
@@ -62,6 +61,10 @@ export default {
 #logo {
   color: white;
   text-decoration: none;
+}
+
+#logo:hover {
+  color: rgb(213, 213, 213);
 }
 
 .logged {

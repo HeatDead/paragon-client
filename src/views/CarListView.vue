@@ -4,7 +4,7 @@
       <img :src="car.img_url" alt="" />
       <div class="midCard">
         <div class="heading">
-          <b>{{ car.model.brand.brand }} {{ car.model.model }}</b>
+          <b>{{ car.model.brand.brand }} {{ car.model.model }} {{ car.year }}</b>
           <p v-if="car.condition == 'NEW'" style="color: rgb(0, 207, 0);">НОВЫЙ</p>
           <p v-if="car.condition == 'USED'" style="color: yellow;">Б/У</p>
         </div>
